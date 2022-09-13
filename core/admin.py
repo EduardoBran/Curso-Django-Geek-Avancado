@@ -10,7 +10,7 @@ class CargoAdmin(admin.ModelAdmin):
         'ativo',
         'modificado',
     )
-    
+
 
 @admin.register(Servico)
 class ServicoAdmin(admin.ModelAdmin):
@@ -29,4 +29,14 @@ class FuncionarioAdmin(admin.ModelAdmin):
         'cargo',
         'ativo',
         'modificado',
-    )    
+    )
+
+
+@admin.register(Recurso)
+class RecursoAdmin(admin.ModelAdmin):
+    list_display = (
+        'nome',
+        'icone',
+        'ativo',
+        'modificado',
+    )
