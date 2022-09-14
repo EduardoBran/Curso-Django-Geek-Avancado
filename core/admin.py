@@ -40,3 +40,53 @@ class RecursoAdmin(admin.ModelAdmin):
         'ativo',
         'modificado',
     )
+
+@admin.register(NamePrice)
+class NamePriceAdmin(admin.ModelAdmin):
+    list_display = (
+        'nome',
+        'ativo',
+        'modificado',
+    )
+    
+@admin.register(TotalUsuarios)
+class TotalUsuariosAdmin(admin.ModelAdmin):
+    list_display = (
+        'total',
+        'ativo',
+        'modificado',
+    )
+
+@admin.register(TotalArmazenamento)
+class TotalArmazenamentoAdmin(admin.ModelAdmin):
+    list_display = (
+        'total',
+        'ativo',
+        'modificado',
+    )
+
+@admin.register(Suporte)
+class SuporteAdmin(admin.ModelAdmin):
+    list_display = (
+        'tipo',
+        'ativo',
+        'modificado',
+    )
+
+@admin.register(Atualizacao)
+class AtualizacaoAdmin(admin.ModelAdmin):
+    list_display = (
+        'tipo',
+        'ativo',
+        'modificado',
+    )
+
+@admin.register(Preco)
+class PrecoAdmin(admin.ModelAdmin):
+    list_display = (
+        'nome',
+        'preco',
+        'suporte',
+        'ativo',
+        'modificado',
+    )
