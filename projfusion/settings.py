@@ -143,3 +143,5 @@ EMAIL_PORT = '2525'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGOUT_REDIRECT_URL = 'index'
+
+django_on_heroku.settings(locals())
