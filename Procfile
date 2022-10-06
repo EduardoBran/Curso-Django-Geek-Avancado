@@ -1,0 +1,1 @@
+web: gunicorn projfusion.wsgi --log-file -
