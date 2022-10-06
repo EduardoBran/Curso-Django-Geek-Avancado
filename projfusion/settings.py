@@ -14,7 +14,6 @@ import os
 from pathlib import Path
 
 import dj_database_url
-import django_on_heroku
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -31,7 +30,7 @@ SECRET_KEY = 'django-insecure-v2v0n^y@7%@1b)t@b)ca%*g07hbo^c8_(&20z(61)ovmqn2xt8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []  # desta forma funciona com o DEBUG = False
+ALLOWED_HOSTS = ['*']  # desta forma funciona com o DEBUG = False
 
 
 # Application definition
@@ -143,4 +142,4 @@ EMAIL_PORT = '2525'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_on_heroku.settings(locals())
+LOGOUT_REDIRECT_URL = 'index'
